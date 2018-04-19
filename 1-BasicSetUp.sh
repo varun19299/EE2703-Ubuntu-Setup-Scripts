@@ -92,6 +92,7 @@ echo "Adding anaconda to path variables"
 command -v zsh | sudo tee -a /etc/shells
 sudo chsh -s "$(command -v zsh)" "${USER}"
 
+# Change default to powershell themed oh my zsh.
 echo "Installing Oh My Zsh"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
