@@ -3,7 +3,7 @@
 set -e
 
 sudo apt-get update -y
-sudo apt-get dist-upgrade -y
+#sudo apt-get dist-upgrade -y
 sudo apt-get install ubuntu-restricted-extras -y
 #sudo ubuntu-drivers autoinstall
 
