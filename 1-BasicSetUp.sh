@@ -100,9 +100,3 @@ echo "Change theme and add autocomplete plugins"
 
 echo "Installing powerline fonts"
 sudo apt-get install fonts-powerline
-
-echo "The script has finished. The System will now reboot so that certain shell changes can take place"
-echo "sudo reboot"
-read -p "Press [Enter] to continue..." temp
-
-sudo reboot
