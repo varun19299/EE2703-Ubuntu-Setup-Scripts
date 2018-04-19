@@ -12,7 +12,7 @@ sudo apt-get install lyx -y
 echo
 echo "Installing atom, overriding"
 # read -p "Download and Install VS Code / Atom / Sublime. Press q to skip this. Default is VS Code [v/a/s/q]: " tempvar
-tempvar="v"
+tempvar="a"
 
 if [ "$tempvar" = "v" ]; then
     curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
