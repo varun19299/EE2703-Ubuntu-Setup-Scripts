@@ -16,6 +16,13 @@ echo "export PATH=/opt/anaconda3/envs/py27/bin:\$PATH" >> ~/.zshrc
 echo "export PATH=/opt/anaconda3/bin:\$PATH" >> ~/.zshrc
 source ~/.zshrc
 
+echo "Installing nbconvert"
+sudo apt-get install pandoc
+cd ~
+git clone https://github.com/jupyter/nbconvert.git
+cd nbconvert
+pip install -e .
+
 pip install autopep8 scdl org-e youtube-dl
 echo "alias ydl=\"youtube-dl -f 140 --add-metadata --metadata-from-title \\\"%(artist)s - %(title)s\\\" -o \\\"%(title)s.%(ext)s\\\"\"" >> ~/.bash_aliases
 
